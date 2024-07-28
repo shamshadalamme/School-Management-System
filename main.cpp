@@ -6,11 +6,10 @@ using namespace std;
 int main()
 {
     cout << "------------Safa Public School----------\n"
-         << endl
-         << "1- Add new Student\n"
-         << "2- Add new Teacher\n"
-         << "3- Show record of Students and Teachers\n"
-         << endl
+         << "\t1- Add new Student\n"
+         << "\t2- Add new Teacher\n"
+         << "\t3- Show record of Students and Teachers with ID\n"
+         << "\t4- Show ALL"
          << "----------------------------------------\n";
 
     return 0;
