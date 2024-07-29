@@ -7,10 +7,23 @@ int startStudentID = 100;
 
 class addNew
 {
-    public:
+    private:
     string name;
     string address;
     string contact;
+
+    public:
+    addNew(string& name, string& address, string& contact);
+
+    //getter
+    const string getName() const {return name;}
+    const string getAddress() const {return address;}
+    const string getContact() const {return contact;}
+
+    //setter
+    void setName(string& newName) {name = newName;}
+    void setAddress(string& newAddress) {address = newAddress;}
+    void setContatc(string& newContact) {contact = newContact;}
 };
 
 class student:public addNew
