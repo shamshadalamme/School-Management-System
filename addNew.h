@@ -30,11 +30,14 @@ class student:public addNew
 {
     public:
     int studentGlobalID = startStudentID++;
-    int classStudent;
+    int ofClassStudent;
     string father;
     string mother;
 
-    student();
+    student(string& name, int& studentGlobalID, int& ofClassStudent, string& address, string& father, string& mother, 
+            string& contact);
+    static student addStudent(string& name, int& studentGlobalID, int& ofClassStudent, string& address, string& father, 
+            string& mother, string& contact);
 
 };
 
@@ -44,6 +47,6 @@ class teacher:public addNew
     int teacherGlobalID = startTeacherID++;
     bool classTeacher;
 
-    teacher();
+    teacher(int& studentGlobalID, int& ofClassStudent, string& address, string& father, string& mother, string& contact);
 
 };
